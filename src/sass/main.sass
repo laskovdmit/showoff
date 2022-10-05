@@ -1,0 +1,64 @@
+body
+    margin: 0
+    padding: 0
+    font-family: 'Gilroy', sans-serif
+    position: relative
+    overflow-x: hidden
+
+html
+    font-size: 16px
+
+ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+p
+    margin: 0
+    padding: 0
+
+h1, h2, h3, h4, h5, h6
+    margin: 0
+    padding: 0
+
+img
+    max-width: 100%
+
+a
+    text-decoration: none
+    outline: none
+
+button
+    outline: none
+    cursor: pointer
+    background-color: inherit
+
+.container
+    max-width: 1200px
+    margin: 0 auto
+
+.btn
+    min-width: 100px
+    padding: 10px
+    text-align: center
+    font-size: 16px
+    font-weight: normal
+    border: 1px solid $border-color
+    border-radius: 8px
+    &:hover
+        background-color: #ddd
+    &:active
+        background-color: #eee
+    &--primary
+        background-color: #b0d6ff
+        border-color: #b0d6ff
+        &:hover
+            background-color: #c2e0ff
+            border-color: #c2e0ff
+        &:active
+            background-color: #d9eafe
+            border-color: #d9eafe
+
+@media (min-width: $tablet-width)
+    .container
+        padding: 0 20px

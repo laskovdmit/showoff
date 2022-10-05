@@ -1,0 +1,38 @@
+.header
+    background-color: #eee
+    &__logo
+        font-size: 30px
+        font-weight: bold
+    &__list
+        list-style: none
+        padding: 0
+        margin: 0
+        display: flex
+        flex-direction: column
+    &__item
+        width: 100%
+        height: 60px
+        &:hover
+            background-color: #bbb
+        &:active
+            background-color: #ccc
+    &__link
+        color: black
+        width: 100%
+        height: 100%
+        padding: 10px 20px
+        text-align: center
+        display: flex
+        align-items: center
+        justify-content: center
+
+        
+
+@media (min-width: $tablet-width)
+    .header
+        &__nav
+            display: flex
+        &__list
+            flex-grow: 1
+            flex-direction: row
+            justify-content: space-between
